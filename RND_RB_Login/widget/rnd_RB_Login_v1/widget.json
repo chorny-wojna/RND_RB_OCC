@@ -1,0 +1,13 @@
+{
+  "availableToAllPages": true,
+  "config": {"passwordPattern": "^[a-zA-Z0-9_!].${6,10}"},
+  "global": false,
+  "globalEnabled": true,
+  "i18nresources": "rnd_rb_res",
+  "imports": [],
+  "javascript": "rnd_rb_main",
+  "jsEditable": true,
+  "minWidth": 1,
+  "name": "RND_RB test login",
+  "version": 1
+}

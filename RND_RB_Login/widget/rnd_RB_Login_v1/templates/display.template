@@ -1,0 +1,38 @@
+<div class="rnd-rb-login col-md-3">
+
+	<div data-bind="ifnot : user().loggedIn()">
+	
+		<div class="row">
+			<h4 class="modal-title" id="rnd-rb-login-title" data-bind="widgetLocaleText: 'logInTitle'"></h4>
+		</div>
+		
+		<div class="row">
+			<div role="alert" data-bind="visible: loginError(),text: loginError"></div>
+
+			<div class="row">
+				<label class="control-label" data-bind="widgetLocaleText: 'loginLabel'">Login:</label>
+				<input class="form-control input-lg" type="text" data-bind="value: loginViewModel.loginValue"/>
+				<span class="cc-validation-message" data-bind='ccValidation: loginViewModel.loginValue'
+					  role="alert"></span>
+			</div>
+
+			<div class="row">
+				<label class="control-label" data-bind="widgetLocaleText: 'passwordLabel'">Password:</label>
+				<input class="form-control input-lg" type="password" data-bind="value: loginViewModel.passwordValue"/>
+				<span class="cc-validation-message" data-bind='ccValidation: loginViewModel.passwordValue'
+					  role="alert"></span>
+			</div>
+
+			<button type="button" class="btn btn-success"
+					data-bind="click: loginViewModel.login, widgetLocaleText: 'loginButtonLabel'">Login
+			</button>
+		</div>
+	</div>
+
+	<div class="row" data-bind="if : user().loggedIn()">
+		<button type="button" class="btn btn-success"
+				data-bind="click: handleLogout, widgetLocaleText: 'logoutButtonLabel'">Logout
+		</button>
+	</div>
+
+</div>

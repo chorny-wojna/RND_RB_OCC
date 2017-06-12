@@ -1,0 +1,14 @@
+{
+  "extensionID": "c978218e-03ed-4ae8-b57a-2f5362e0fe89",
+  "developerID": "987654",
+  "createdBy": "Roman Baranov",
+  "version": 1,
+  "timeCreated": "2017-06-08",
+  "translations" : [
+    {
+      "language" : "en_US",
+      "name":"Hello world exstension",
+      "description":"Hello world widget"
+    }
+  ]
+}

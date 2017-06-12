@@ -1,0 +1,14 @@
+{
+  "extensionID": "a20a1c16-6e1c-4778-ac76-b07fa9aa7667",
+  "developerID": "987654",
+  "createdBy": "Roman Baranov",
+  "version": 1,
+  "timeCreated": "2017-06-08",
+  "translations" : [
+    {
+      "language" : "en_US",
+      "name":"Global extension",
+      "description":"Global widget"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "config": {},
+  "global": true,
+  "globalEnabled": true,
+  "imports": [],
+  "javascript": "web-content",
+  "jsEditable": false,
+  "minWidth": 1,
+  "name": "RND_RB Global widget",
+  "version": 1
+}

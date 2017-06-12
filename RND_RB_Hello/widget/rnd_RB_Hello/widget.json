@@ -1,0 +1,12 @@
+{
+  "availableToAllPages": true,
+  "config": {},
+  "global": false,
+  "globalEnabled": false,
+  "imports": [],
+  "javascript": "web-content",
+  "jsEditable": false,
+  "minWidth": 1,
+  "name": "RND_RB Hello widget",
+  "version": 1
+}

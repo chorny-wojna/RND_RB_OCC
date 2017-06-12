@@ -1,0 +1,9 @@
+{
+  "extensionID": "c978218e-03ed-4ae8-b57a-2f5362e0fe89",
+  "developerID": "987654",
+  "createdBy": "Roman Baranov",
+  "version": 2,
+  "timeCreated": "2017-06-12",
+  "name":"RND_RB Login extension",
+  "description":"Logging in and input validation"
+}

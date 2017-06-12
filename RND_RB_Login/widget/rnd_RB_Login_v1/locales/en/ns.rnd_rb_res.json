@@ -1,0 +1,9 @@
+{
+  "resources": {
+    "logInTitle" : "Login Form",
+    "loginLabel" : "Login",
+    "passwordLabel" : "Password",
+    "loginButtonLabel" : "Login",
+    "logoutButtonLabel" : "Logout"
+  }
+}
