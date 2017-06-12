@@ -6,25 +6,30 @@ define(['knockout', 'jquery', 'pubsub', 'ccRestClient', 'koValidate', 'ccPasswor
 			var self = this;
 			
 			self.loginValue = ko.observable().extend({
-				required: true,
-				minLength: 6,
-				pattern: {
-					message: 'Login does not match pattern. It can only contain lower and upper case letters, numbers, and _ between them.',
-					params: '\w+_?\w+'
+				required: {
+				    message: 'Required',
+				    params: true
 				},
-				message: 'Check your login'
+				pattern : {
+				    message: 'Not valid email',
+				    params: '^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$'
+				}
 			});
 			
 			self.passwordValue = ko.observable().extend({
-				password: {
-					params: { 
-						policies: self.passwordPolicies, 
-						login: self.loginValue, 
-						observable: self.passwordValue, 
-						includePreviousNPasswordRule: self.includePreviousNPasswordRule 
-					},
-					message: 'Weak password'
-				}
+				minLength: {
+				    params: 6,
+				    message: 'Too short'
+				},
+	
+				maxLength: {
+				    params: 16,
+				    message: 'Too long'
+				},
+				required: {
+				    params: true,
+				    message: 'Required'
+				},
 			});
 
 			self.login = function (widget) {
